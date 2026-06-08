@@ -219,16 +219,16 @@ export default function Home() {
               fontWeight="black"
               letterSpacing="tight"
               bgGradient="to-r"
-              gradientFrom="teal.400"
+              gradientFrom="orange.400"
               gradientTo="purple.500"
               bgClip="text"
               _hover={{ opacity: 0.9 }}
               textAlign={{ base: "center", md: "left" }}
             >
-              HERITAGE & HARMONY
+              MEKAELA ACADEMIES
             </Heading>
             <Text fontSize="10px" fontWeight="bold" letterSpacing="widest" color="fg.muted" textAlign={{ base: "center", md: "left" }}>
-              CULTURAL DAY INTERACTIVE EXHIBITION
+             MEKA @ 30 AND CULTURAL DAY 
             </Text>
           </Box>
 
