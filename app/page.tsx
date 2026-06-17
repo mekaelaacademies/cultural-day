@@ -36,9 +36,10 @@ import UserProfile from "@/components/UserProfile";
 import GalleryGrid from "@/components/GalleryGrid";
 import { ColorModeButton } from "@/components/ui/color-mode";
 import { Toaster } from "@/components/ui/toaster";
+import { motion } from "motion/react"
 
 const CATEGORIES = ["All", "Staff Tournament", "Student Tournament", "Cultural Day", "Talent Explosion", "Road Show", "Bonefire"];
-const WORDS = ["MEKAELA AT 30", "CENTER OF EXCELLENCE","SOURING NEW HEIGHTS"];
+const WORDS = ["MEKAELA AT 30", "CENTER OF EXCELLENCE", "SOURING NEW HEIGHTS"];
 const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%";
 export default function Home() {
   // Core Database States
@@ -73,7 +74,7 @@ export default function Home() {
       const total = 20;
       //@ts-expect-error:fix
       clearInterval(intervalRef.current);
-        //@ts-expect-error:fix
+      //@ts-expect-error:fix
       intervalRef.current = setInterval(() => {
         setDisplay(
           target
@@ -87,7 +88,7 @@ export default function Home() {
         );
         frame++;
         if (frame > total) {
-            //@ts-expect-error:fix
+          //@ts-expect-error:fix
           clearInterval(intervalRef.current);
           setDisplay(target);
           setWordIdx(nextIdx);
@@ -234,7 +235,12 @@ export default function Home() {
 
     return matchesCategory && matchesSearch;
   });
+const box = {
+    width: 100,
+    height: 100,
 
+    borderRadius: 5,
+}
   return (
     <Box bg="bg.canvas" minH="100vh" pb="12" transition="background-color 0.2s">
       <Container maxW="6xl" px={{ base: "4", md: "6" }}>
@@ -266,9 +272,9 @@ export default function Home() {
             </Heading>
             <Text fontSize="10px" fontWeight="bold" letterSpacing="widest" color="fg.muted" textAlign={{ base: "center", md: "left" }}>
               MEKA @ 30 AND CULTURAL DAY
-                  <div style={{ fontFamily: "monospace", fontSize: 28, fontWeight: 900, color: "#34d399", letterSpacing: "0.12em" }}>
-      {display}
-    </div>
+              <div style={{ fontFamily: "monospace", fontSize: 28, fontWeight: 900, color: "#34d399", letterSpacing: "0.12em" }}>
+                {display}
+              </div>
             </Text>
           </Box>
 
@@ -290,13 +296,23 @@ export default function Home() {
               <Box position="absolute" left="3.5" top="2" color="fg.subtle">
                 <FiSearch size="14" />
               </Box> */}
-              <Image
+              <motion.div       
+                  
+                  
+              style={box}
+                whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.95 }}
+            animate={{ rotate: 360 }}
+            transition={{ duration: 1 }} >        
+           <Image
                 src={"/images/logo.png"}
                 alt={"logo"}
                 w={20}
                 h={20}
                 borderRadius="full"
-              />
+              />  
+                 </motion.div >
+      
 
             </Box>
           </HStack>
