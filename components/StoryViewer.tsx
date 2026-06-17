@@ -190,7 +190,7 @@ export default function StoryViewer({
 
         {/* Slide Media */}
         <Image
-          src={currentSlide.imageUrl}
+          src={currentSlide?.imageUrl}
           alt={currentSlide.caption}
           w="100%"
           h="100%"
