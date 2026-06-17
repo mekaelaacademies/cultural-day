@@ -110,7 +110,7 @@ export default function GalleryGrid({
           transform: "scale(1.02) translateY(-4px)",
           boxShadow: `0 15px 30px rgba(0, 0, 0, 0.3), 0 0 20px ${primaryGlowColor}44`,
         }}
-        onClick={() => onSelectPost(post)}
+        // onClick={() => onSelectPost(post)}
         aspectRatio={aspectValue}
         mb={layoutMode === "masonry" ? "6" : "0"}
         css={{ breakInside: "avoid" }}
@@ -156,9 +156,9 @@ export default function GalleryGrid({
             border="1px solid"
             borderColor="whiteAlpha.300"
           >
-            {post.country}
+           {post.category}
           </Box>
-          <Box
+          {/* <Box
             bg={`${getCategoryColor(post.category)}`}
             px="2.5"
             py="1"
@@ -168,7 +168,7 @@ export default function GalleryGrid({
             color="white"
           >
             {post.category}
-          </Box>
+          </Box> */}
         </HStack>
 
         {/* Quick Save Action Overlay */}
@@ -219,21 +219,21 @@ export default function GalleryGrid({
         >
           <VStack align="start" gap="1.5">
             <Heading size="xs" color="white" fontWeight="extrabold" lineClamp={1}>
-              {post.title}
+            {post.category}
             </Heading>
             
             <HStack justify="space-between" w="100%">
               {/* Photographer details */}
               <HStack gap="2">
                 <Image
-                  src={post.photographer.avatarUrl}
+                  src={"/images/logo.png"}
                   alt={post.photographer.name}
                   w="20px"
                   h="20px"
                   borderRadius="full"
                 />
                 <Text fontSize="10px" color="whiteAlpha.800" fontWeight="medium">
-                  @{post.photographer.username}
+                  @Mekaela Academies
                 </Text>
               </HStack>
 

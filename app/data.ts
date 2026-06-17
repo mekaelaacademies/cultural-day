@@ -420,7 +420,7 @@ export const STORIES: Story[] = [
     id: "story_japan",
     title: "Staff Tournament",
     coverImage: "/images/staff/t8.JPG",
-    avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&h=150&q=80",
+    avatarUrl: "/images/logo.png",
     slides: [
       {
         id: "sj_1",
@@ -479,20 +479,56 @@ export const STORIES: Story[] = [
     ]
   },
   {
-    id: "story_indiga",
+    id: "story_india",
     title: "Students Tournament",
     coverImage: "/images/students/s3.jpeg",
-    avatarUrl: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&h=150&q=80",
+    avatarUrl: "/images/logo.png",
     slides: [
       {
         id: "si_1",
-        imageUrl: "/images/indian_diwali_lamps.png",
+        imageUrl: "/images/students/s1.jpeg",
         caption: "Setting up clay diyas around the household. Every flame represents hope.",
         description: "Diyas are filled with ghee or mustard oil. Cotton wicks draw the oil up to feed the flame throughout the night."
       },
       {
         id: "si_2",
-        imageUrl: "https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=600&h=800&q=80",
+        imageUrl: "/images/students/s2.jpeg",
+        caption: "Vibrant flower garlands ready for the evening pooja rituals.",
+        description: "Marigolds (Genda Phool) signify auspiciousness and are used to decorate doors, temples, and Rangolis."
+      },
+      {
+        id: "si_3",
+        imageUrl: "/images/students/s3.jpeg",
+        caption: "Vibrant flower garlands ready for the evening pooja rituals.",
+        description: "Marigolds (Genda Phool) signify auspiciousness and are used to decorate doors, temples, and Rangolis."
+      },
+      {
+        id: "si_4",
+        imageUrl: "/images/students/s4.jpeg",
+        caption: "Vibrant flower garlands ready for the evening pooja rituals.",
+        description: "Marigolds (Genda Phool) signify auspiciousness and are used to decorate doors, temples, and Rangolis."
+      },
+      {
+        id: "si_5",
+        imageUrl: "/images/students/s5.jpeg",
+        caption: "Vibrant flower garlands ready for the evening pooja rituals.",
+        description: "Marigolds (Genda Phool) signify auspiciousness and are used to decorate doors, temples, and Rangolis."
+      },
+      {
+        id: "si_6",
+        imageUrl: "/images/students/s6.jpeg",
+        caption: "Vibrant flower garlands ready for the evening pooja rituals.",
+        description: "Marigolds (Genda Phool) signify auspiciousness and are used to decorate doors, temples, and Rangolis."
+      },
+      {
+        id: "si_7",
+        imageUrl: "/images/students/s7.jpeg",
+        caption: "Vibrant flower garlands ready for the evening pooja rituals.",
+        description: "Marigolds (Genda Phool) signify auspiciousness and are used to decorate doors, temples, and Rangolis."
+      },
+      {
+        id: "si_8",
+        imageUrl: "/images/students/s8.jpeg",
         caption: "Vibrant flower garlands ready for the evening pooja rituals.",
         description: "Marigolds (Genda Phool) signify auspiciousness and are used to decorate doors, temples, and Rangolis."
       }
@@ -501,12 +537,12 @@ export const STORIES: Story[] = [
   {
     id: "story_kenya",
     title: "Cultural",
-    coverImage: "/images/maasai_tribal_art.png",
-    avatarUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80",
+    coverImage: "/images/white.jpg",
+    avatarUrl: "/images/logo.png",
     slides: [
       {
         id: "sk_1",
-        imageUrl: "/images/maasai_tribal_art.png",
+        imageUrl: "/images/white.jpg",
         caption: "Gathering for the Adumu dance, the traditional high-jumping dance of Maasai warriors.",
         description: "The Adumu is performed during rites of passage to showcase strength, stamina, and agility to the community."
       }
@@ -516,60 +552,45 @@ export const STORIES: Story[] = [
     id: "story_mexico",
     title: "Talent Explosion",
     coverImage: "/images/white.jpg",
-    avatarUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80",
+    avatarUrl: "/images/logo.png",
     slides: [
       {
         id: "sm_1",
-        imageUrl: "/images/mexican_day_of_dead.png",
+        imageUrl: "/images/white.jpg",
         caption: "",
         description: ""
       },
-      {
-        id: "sm_2",
-        imageUrl: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&h=800&q=80",
-        caption: "",
-        description: ""
-      }
+
     ]
   },
   {
     id: "story_mexico1",
     title: "Roadshow",
     coverImage: "/images/white.jpg",
-    avatarUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80",
+    avatarUrl: "/images/logo.png",
     slides: [
       {
         id: "sm_1",
-        imageUrl: "/images/mexican_day_of_dead.png",
-        caption: "Making sugar skulls (calaveras de azúcar) to place on the altar.",
-        description: "The names of deceased loved ones are written on the skulls' foreheads using colorful icing."
+        imageUrl: "/images/white.jpg",
+        caption: "",
+        description: ""
       },
-      {
-        id: "sm_2",
-        imageUrl: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&h=800&q=80",
-        caption: "Bright orange cempasúchil paths leading spirits to the home altars.",
-        description: "The petalled pathway ensures that spirits do not get lost in the transition between worlds."
-      }
+
     ]
   },
   {
-    id: "story_mexico1",
+    id: "story_mexico2",
     title: "Bonefire",
     coverImage: "/images/white.jpg",
-    avatarUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80",
+    avatarUrl: "/images/logo.png",
     slides: [
       {
         id: "sm_1",
-        imageUrl: "/images/mexican_day_of_dead.png",
-        caption: "Making sugar skulls (calaveras de azúcar) to place on the altar.",
-        description: "The names of deceased loved ones are written on the skulls' foreheads using colorful icing."
-      },
-      {
-        id: "sm_2",
-        imageUrl: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&h=800&q=80",
-        caption: "Bright orange cempasúchil paths leading spirits to the home altars.",
-        description: "The petalled pathway ensures that spirits do not get lost in the transition between worlds."
+        imageUrl: "/images/white.jpg",
+        caption: "",
+        description: ""
       }
+
     ]
   }
 ];

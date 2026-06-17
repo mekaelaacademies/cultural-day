@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   Container,
   Box,
@@ -9,6 +9,7 @@ import {
   Text,
   Input,
   Button,
+  Image,
   HStack,
   VStack,
   IconButton,
@@ -37,13 +38,14 @@ import { ColorModeButton } from "@/components/ui/color-mode";
 import { Toaster } from "@/components/ui/toaster";
 
 const CATEGORIES = ["All", "Staff Tournament", "Student Tournament", "Cultural Day", "Talent Explosion", "Road Show", "Bonefire"];
-
+const WORDS = ["MEKAELA AT 30", "CENTER OF EXCELLENCE","SOURING NEW HEIGHTS"];
+const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%";
 export default function Home() {
   // Core Database States
   const [posts, setPosts] = useState<Post[]>(INITIAL_POSTS);
   const [comments, setComments] = useState<Comment[]>(INITIAL_COMMENTS);
   const [badges, setBadges] = useState<Badge[]>(BADGES);
-  
+
   // Navigation & Filtering States
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -59,7 +61,42 @@ export default function Home() {
 
   // Gamification tracking states
   const [viewedPostIds, setViewedPostIds] = useState<Set<string>>(new Set());
+  const [display, setDisplay] = useState("FRAMER");
+  const [wordIdx, setWordIdx] = useState(0);
+  const intervalRef = useRef(null);
 
+  useEffect(() => {
+    const cycle = () => {
+      const nextIdx = (wordIdx + 1) % WORDS.length;
+      const target = WORDS[nextIdx];
+      let frame = 0;
+      const total = 20;
+      //@ts-expect-error:fix
+      clearInterval(intervalRef.current);
+        //@ts-expect-error:fix
+      intervalRef.current = setInterval(() => {
+        setDisplay(
+          target
+            .split("")
+            .map((ch, i) =>
+              frame / total > i / target.length
+                ? ch
+                : CHARS[Math.floor(Math.random() * CHARS.length)]
+            )
+            .join("")
+        );
+        frame++;
+        if (frame > total) {
+            //@ts-expect-error:fix
+          clearInterval(intervalRef.current);
+          setDisplay(target);
+          setWordIdx(nextIdx);
+        }
+      }, 40);
+    };
+    const t = setTimeout(cycle, 1800);
+    return () => clearTimeout(t);
+  }, [wordIdx]);
   // Handle active stories skipping
   const currentStoryIndex = STORIES.findIndex((s) => s.id === selectedStoryId);
   const handleNextStory = () => {
@@ -143,7 +180,7 @@ export default function Home() {
   const handleSelectPost = (post: Post) => {
     setSelectedPost(post);
     setIsDetailOpen(true);
-    
+
     // Track posts viewed for achievements
     setViewedPostIds((prev) => {
       const next = new Set(prev);
@@ -188,7 +225,7 @@ export default function Home() {
   const filteredPosts = posts.filter((post) => {
     const matchesCategory =
       selectedCategory === "All" || post.category.toLowerCase() === selectedCategory.toLowerCase();
-    
+
     const matchesSearch =
       post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -201,7 +238,7 @@ export default function Home() {
   return (
     <Box bg="bg.canvas" minH="100vh" pb="12" transition="background-color 0.2s">
       <Container maxW="6xl" px={{ base: "4", md: "6" }}>
-        
+
         {/* HEADER SECTION */}
         <Flex
           direction={{ base: "column", md: "row" }}
@@ -228,7 +265,10 @@ export default function Home() {
               MEKAELA ACADEMIES
             </Heading>
             <Text fontSize="10px" fontWeight="bold" letterSpacing="widest" color="fg.muted" textAlign={{ base: "center", md: "left" }}>
-             MEKA @ 30 AND CULTURAL DAY 
+              MEKA @ 30 AND CULTURAL DAY
+                  <div style={{ fontFamily: "monospace", fontSize: 28, fontWeight: 900, color: "#34d399", letterSpacing: "0.12em" }}>
+      {display}
+    </div>
             </Text>
           </Box>
 
@@ -250,7 +290,14 @@ export default function Home() {
               <Box position="absolute" left="3.5" top="2" color="fg.subtle">
                 <FiSearch size="14" />
               </Box> */}
-            
+              <Image
+                src={"/images/logo.png"}
+                alt={"logo"}
+                w={20}
+                h={20}
+                borderRadius="full"
+              />
+
             </Box>
           </HStack>
 
@@ -290,6 +337,7 @@ export default function Home() {
                   borderColor="bg.canvas"
                 />
               )} */}
+
             </Box>
 
             <ClientOnly fallback={<Skeleton boxSize="8" />}>
@@ -349,7 +397,7 @@ export default function Home() {
 
           {/* Layout Configuration Bar */}
           <HStack gap="3" justify={{ base: "space-between", sm: "flex-end" }}>
-            
+
             {/* Grid Ratio Filters (Visible only in Grid Mode) */}
             {layoutMode === "grid" && (
               <HStack gap="1" bg="bg.panel" p="0.5" borderRadius="lg" border="1px solid" borderColor="border.muted">
@@ -432,7 +480,7 @@ export default function Home() {
         </Box>
 
         {/* INTERACTIVE POPUPS, MODALS, DRAWERS */}
-        
+
         {/* Fullscreen Media Lightbox Modal */}
         <DetailModal
           post={selectedPost}
