@@ -7,7 +7,7 @@ export const INITIAL_POSTS: Post[] = [
     description: "Deep mindfulness captured in a traditional Japanese Chanoyu (tea ceremony). The chasen whisk glides across the hand-formed Raku bowl, creating a perfect jade froth.",
     culturalSignificance: "The Japanese tea ceremony (Chanoyu, 'hot water for tea') is a choreographic ritual of preparing and serving Japanese green tea, called Matcha, together with traditional Japanese sweets. It is not just about drinking tea, but about Zen mindfulness, harmony (Wa), respect (Kei), purity (Sei), and tranquility (Jaku). Every movement of the host is precisely designed to focus on the present moment.",
     imageUrl: "/images/students/s1.jpeg",
-    category: "Culinary",
+    category: "Student Tournament",
     country: "Japan",
     likes: 342,
     commentsCount: 3,
@@ -35,7 +35,7 @@ export const INITIAL_POSTS: Post[] = [
     description: "Warm flame of oil lamps lining a colorful Rangoli on the night of Diwali. Celebrating the triumph of inner light over darkness.",
     culturalSignificance: "Diwali, the Festival of Lights, is one of the most prominent festivals in Hinduism, Jainism, and Sikhism. The lighting of clay lamps (diyas) symbolizes the destruction of negative forces like ignorance, anger, and greed, replacing them with wisdom, love, and light. Rangoli—intricate designs made of colored rice flour, sand, or flower petals on the floor—is created at entrances to welcome Lakshmi, the goddess of prosperity and good fortune.",
     imageUrl: "/images/staff/t8.JPG",
-    category: "Art & Craft",
+    category: "Staff Tournament",
     country: "India",
     likes: 512,
     commentsCount: 4,
@@ -63,7 +63,7 @@ export const INITIAL_POSTS: Post[] = [
     description: "Close-up of the intricate glass beadwork and vivid crimson shúkà of a Maasai elder. Every bead color holds an ancestral story.",
     culturalSignificance: "For the Maasai people of East Africa, beadwork is a major form of artistic expression and social signaling. The colors of the beads represent vital cultural elements: Red signifies bravery, strength, and unity (symbolized by blood); Blue represents the sky, which brings rain for the cattle; Green symbolizes health, land, and pasture; White represents purity, peace, and health (symbolized by milk); Yellow and Orange represent hospitality and warmth.",
     imageUrl: "/images/students/s2.jpeg",
-    category: "Costumes",
+    category: "Student Tournament",
     country: "Kenya",
     likes: 289,
     commentsCount: 2,
@@ -91,7 +91,7 @@ export const INITIAL_POSTS: Post[] = [
     description: "Flickering candles illuminate marigold flowers (cempasúchil) and hand-crafted sugar skulls on a Dia de los Muertos altar.",
     culturalSignificance: "Día de los Muertos (Day of the Dead) is a Mexican holiday where families welcome back the souls of their deceased relatives for a brief reunion. The altar (ofrenda) is decorated with candles to guide spirits home, bright orange marigolds whose scent and color guide souls, sugar skulls representing the sweetness of life and playfulness of death, and the favorite foods of the deceased, celebrating death as a natural phase of life.",
     imageUrl: "/images/staff/t4.JPG",
-    category: "Art & Craft",
+    category: "Staff Tournament",
     country: "Mexico",
     likes: 476,
     commentsCount: 3,
@@ -119,7 +119,7 @@ export const INITIAL_POSTS: Post[] = [
     description: "Intricate geometric shadows cast by hanging brass lanterns in a cozy Marrakech riad, highlighting Moroccan architectural mastery.",
     culturalSignificance: "Moroccan lanterns (Fanous) are highly detailed metalwork creations, hand-punched by local coppersmiths. In Moroccan architecture and interior design, lighting is used to create texture and mood. The cut-outs form intricate Islamic geometric patterns, transforming ordinary walls into tapestries of light and shadow, reflecting the deep Islamic mathematical traditions of design.",
     imageUrl: "/images/students/s3.jpeg",
-    category: "Architecture",
+    category: "Student Tournament",
     country: "Morocco",
     likes: 421,
     commentsCount: 2,
@@ -147,7 +147,7 @@ export const INITIAL_POSTS: Post[] = [
     description: "Eilean Donan Castle standing proudly at the confluence of three sea lochs, shrouded in atmospheric Highlands fog and purple heather.",
     culturalSignificance: "Eilean Donan is a small tidal island in the Western Highlands of Scotland. The castle, first established in the 13th century, was a stronghold of the Clan Mackenzie. It stands as an iconic symbol of Scottish heritage, rugged independence, and Highland history. The moody landscapes, misty lochs, and vibrant heather are deeply woven into Celtic folklore, poetry, and song.",
     imageUrl: "/images/staff/t3.JPG",
-    category: "Architecture",
+    category: "Staff Tournament",
     country: "Scotland",
     likes: 395,
     commentsCount: 2,
@@ -169,13 +169,13 @@ export const INITIAL_POSTS: Post[] = [
     likedByUser: false,
     savedByUser: false
   },
-   {
+  {
     id: "post_7",
     title: "Chauan Ceremony in Kyoto",
     description: "Deep mindfulness captured in a traditional Japanese Chanoyu (tea ceremony). The chasen whisk glides across the hand-formed Raku bowl, creating a perfect jade froth.",
     culturalSignificance: "The Japanese tea ceremony (Chanoyu, 'hot water for tea') is a choreographic ritual of preparing and serving Japanese green tea, called Matcha, together with traditional Japanese sweets. It is not just about drinking tea, but about Zen mindfulness, harmony (Wa), respect (Kei), purity (Sei), and tranquility (Jaku). Every movement of the host is precisely designed to focus on the present moment.",
     imageUrl: "/images/students/s4.jpeg",
-    category: "Culinary",
+    category: "Student Tournament",
     country: "Japan",
     likes: 342,
     commentsCount: 3,
@@ -203,7 +203,7 @@ export const INITIAL_POSTS: Post[] = [
     description: "Warm flame of oil lamps lining a colorful Rangoli on the night of Diwali. Celebrating the triumph of inner light over darkness.",
     culturalSignificance: "Diwali, the Festival of Lights, is one of the most prominent festivals in Hinduism, Jainism, and Sikhism. The lighting of clay lamps (diyas) symbolizes the destruction of negative forces like ignorance, anger, and greed, replacing them with wisdom, love, and light. Rangoli—intricate designs made of colored rice flour, sand, or flower petals on the floor—is created at entrances to welcome Lakshmi, the goddess of prosperity and good fortune.",
     imageUrl: "/images/staff/t9.JPG",
-    category: "Art & Craft",
+    category: "Staff Tournament",
     country: "India",
     likes: 512,
     commentsCount: 4,
@@ -231,7 +231,7 @@ export const INITIAL_POSTS: Post[] = [
     description: "Close-up of the intricate glass beadwork and vivid crimson shúkà of a Maasai elder. Every bead color holds an ancestral story.",
     culturalSignificance: "For the Maasai people of East Africa, beadwork is a major form of artistic expression and social signaling. The colors of the beads represent vital cultural elements: Red signifies bravery, strength, and unity (symbolized by blood); Blue represents the sky, which brings rain for the cattle; Green symbolizes health, land, and pasture; White represents purity, peace, and health (symbolized by milk); Yellow and Orange represent hospitality and warmth.",
     imageUrl: "/images/students/s5.jpeg",
-    category: "Costumes",
+    category: "Student Tournament",
     country: "Kenya",
     likes: 289,
     commentsCount: 2,
@@ -259,7 +259,7 @@ export const INITIAL_POSTS: Post[] = [
     description: "Flickering candles illuminate marigold flowers (cempasúchil) and hand-crafted sugar skulls on a Dia de los Muertos altar.",
     culturalSignificance: "Día de los Muertos (Day of the Dead) is a Mexican holiday where families welcome back the souls of their deceased relatives for a brief reunion. The altar (ofrenda) is decorated with candles to guide spirits home, bright orange marigolds whose scent and color guide souls, sugar skulls representing the sweetness of life and playfulness of death, and the favorite foods of the deceased, celebrating death as a natural phase of life.",
     imageUrl: "/images/staff/t5.JPG",
-    category: "Art & Craft",
+    category: "Staff Tournament",
     country: "Mexico",
     likes: 476,
     commentsCount: 3,
@@ -287,7 +287,7 @@ export const INITIAL_POSTS: Post[] = [
     description: "Intricate geometric shadows cast by hanging brass lanterns in a cozy Marrakech riad, highlighting Moroccan architectural mastery.",
     culturalSignificance: "Moroccan lanterns (Fanous) are highly detailed metalwork creations, hand-punched by local coppersmiths. In Moroccan architecture and interior design, lighting is used to create texture and mood. The cut-outs form intricate Islamic geometric patterns, transforming ordinary walls into tapestries of light and shadow, reflecting the deep Islamic mathematical traditions of design.",
     imageUrl: "/images/students/s6.jpeg",
-    category: "Architecture",
+    category: "Student Tournament",
     country: "Morocco",
     likes: 421,
     commentsCount: 2,
@@ -315,7 +315,7 @@ export const INITIAL_POSTS: Post[] = [
     description: "Eilean Donan Castle standing proudly at the confluence of three sea lochs, shrouded in atmospheric Highlands fog and purple heather.",
     culturalSignificance: "Eilean Donan is a small tidal island in the Western Highlands of Scotland. The castle, first established in the 13th century, was a stronghold of the Clan Mackenzie. It stands as an iconic symbol of Scottish heritage, rugged independence, and Highland history. The moody landscapes, misty lochs, and vibrant heather are deeply woven into Celtic folklore, poetry, and song.",
     imageUrl: "/images/staff/t7.JPG",
-    category: "Architecture",
+    category: "Staff Tournament",
     country: "Scotland",
     likes: 395,
     commentsCount: 2,
@@ -337,7 +337,7 @@ export const INITIAL_POSTS: Post[] = [
     likedByUser: false,
     savedByUser: false
   },
- 
+
 ];
 
 export const INITIAL_COMMENTS: Comment[] = [
@@ -419,27 +419,69 @@ export const STORIES: Story[] = [
   {
     id: "story_japan",
     title: "Staff Tournament",
-    coverImage: "/images/japanese_tea_ceremony.png",
+    coverImage: "/images/staff/t8.JPG",
     avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&h=150&q=80",
     slides: [
       {
         id: "sj_1",
-        imageUrl: "/images/japanese_tea_ceremony.png",
-        caption: "Inside a 400-year-old tea room in Kyoto, studying the choreography of tea.",
-        description: "Chanoyu requires years of study to master. It encompasses flower arranging, calligraphy, pottery, and culinary arts."
+        imageUrl: "/images/staff/t1.JPG",
+        caption: "",
+        description: ""
       },
       {
         id: "sj_2",
-        imageUrl: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=600&h=800&q=80",
-        caption: "The tranquil stone pathways of Arashiyama, designed to slow the visitor's pace.",
-        description: "Tranquility (Jaku) is achieved when we strip away the noise of the self and align with the pace of nature."
-      }
+        imageUrl: "/images/staff/t2.JPG",
+        caption: "",
+        description: ""
+      },
+      {
+        id: "sj_2",
+        imageUrl: "/images/staff/t3.JPG",
+        caption: "",
+        description: ""
+      },
+      {
+        id: "sj_2",
+        imageUrl: "/images/staff/t4.JPG",
+        caption: "",
+        description: ""
+      },
+      {
+        id: "sj_2",
+        imageUrl: "/images/staff/t5.JPG",
+        caption: "",
+        description: ""
+      },
+      {
+        id: "sj_2",
+        imageUrl: "/images/staff/t6.JPG",
+        caption: "",
+        description: ""
+      },
+      {
+        id: "sj_2",
+        imageUrl: "/images/staff/t7.JPG",
+        caption: "",
+        description: ""
+      },
+      {
+        id: "sj_2",
+        imageUrl: "/images/staff/t8.JPG",
+        caption: "",
+        description: ""
+      },
+      //             {
+      //   id: "sj_2",
+      //   imageUrl: "/images/staff/t6.JPG",
+      //   caption: "",
+      //   description: ""
+      // }
     ]
   },
   {
-    id: "story_india",
+    id: "story_indiga",
     title: "Students Tournament",
-    coverImage: "/images/indian_diwali_lamps.png",
+    coverImage: "/images/students/s3.jpeg",
     avatarUrl: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&h=150&q=80",
     slides: [
       {
@@ -470,10 +512,30 @@ export const STORIES: Story[] = [
       }
     ]
   },
-    {
+  {
     id: "story_mexico",
     title: "Talent Explosion",
-    coverImage: "/images/mexican_day_of_dead.png",
+    coverImage: "/images/white.jpg",
+    avatarUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80",
+    slides: [
+      {
+        id: "sm_1",
+        imageUrl: "/images/mexican_day_of_dead.png",
+        caption: "",
+        description: ""
+      },
+      {
+        id: "sm_2",
+        imageUrl: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&h=800&q=80",
+        caption: "",
+        description: ""
+      }
+    ]
+  },
+  {
+    id: "story_mexico1",
+    title: "Roadshow",
+    coverImage: "/images/white.jpg",
     avatarUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80",
     slides: [
       {
@@ -491,29 +553,9 @@ export const STORIES: Story[] = [
     ]
   },
   {
-    id: "story_mexico",
-    title: "Roadshow",
-    coverImage: "/images/mexican_day_of_dead.png",
-    avatarUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80",
-    slides: [
-      {
-        id: "sm_1",
-        imageUrl: "/images/mexican_day_of_dead.png",
-        caption: "Making sugar skulls (calaveras de azúcar) to place on the altar.",
-        description: "The names of deceased loved ones are written on the skulls' foreheads using colorful icing."
-      },
-      {
-        id: "sm_2",
-        imageUrl: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&h=800&q=80",
-        caption: "Bright orange cempasúchil paths leading spirits to the home altars.",
-        description: "The petalled pathway ensures that spirits do not get lost in the transition between worlds."
-      }
-    ]
-  },
-    {
-    id: "story_mexico",
+    id: "story_mexico1",
     title: "Bonefire",
-    coverImage: "/images/mexican_day_of_dead.png",
+    coverImage: "/images/white.jpg",
     avatarUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80",
     slides: [
       {
