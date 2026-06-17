@@ -15,6 +15,7 @@ import {
   IconButton,
   ClientOnly,
   Skeleton,
+  Center,
 } from "@chakra-ui/react";
 import {
   FiSearch,
@@ -254,7 +255,47 @@ const box = {
           borderBottom="1px solid"
           borderColor="border.muted"
           gap="4"
-        >
+        > <Center>
+
+     
+                    <HStack display={{ base: "flex", md: "none" }}   align="center"  w={{ base: "100%", md: "340px" }} gap="2">
+            <Box justifyContent={'center'}      alignItems={'center'} position="relative" w="100%">
+              {/* <Input
+                placeholder="Search cultures, locations, crafts..."
+                size="sm"
+                borderRadius="full"
+                pl="9"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                bg="bg.panel"
+                border="1px solid"
+                borderColor="border.muted"
+                _focus={{ borderColor: "teal.500", boxShadow: "0 0 8px rgba(49, 151, 149, 0.2)" }}
+              />
+              <Box position="absolute" left="3.5" top="2" color="fg.subtle">
+                <FiSearch size="14" />
+              </Box> */}
+              <motion.div       
+                  
+                  
+              style={box}
+                whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.95 }}
+            animate={{ rotate: 360 }}
+            transition={{ duration: 1 }} >        
+           <Image
+                src={"/images/logo.png"}
+                alt={"logo"}
+                w={20}
+                h={20}
+                borderRadius="full"
+              />  
+                 </motion.div >
+      
+
+            </Box>
+          </HStack>
+             </Center>
           {/* Logo with Glow Gradient */}
           <Box cursor="pointer" onClick={() => { setSelectedCategory("All"); setSearchQuery(""); }}>
             <Heading
@@ -279,7 +320,7 @@ const box = {
           </Box>
 
           {/* Search Input Bar */}
-          <HStack w={{ base: "100%", md: "340px" }} gap="2">
+          <HStack display={{ base: "none", md: "flex" }}   w={{ base: "100%", md: "340px" }} gap="2">
             <Box position="relative" w="100%">
               {/* <Input
                 placeholder="Search cultures, locations, crafts..."
