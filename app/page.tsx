@@ -256,7 +256,7 @@ export default function Home() {
 
           {/* Actions: Add, Profile, Mode toggles */}
           <HStack gap="3" w={{ base: "100%", md: "auto" }} justify={{ base: "center", md: "flex-end" }}>
-            <Button
+            {/* <Button
               size="sm"
               colorPalette="teal"
               borderRadius="full"
@@ -265,10 +265,10 @@ export default function Home() {
             >
               <FiPlus /> Share Post
             </Button>
-            
+             */}
             {/* Explorer Profile with dynamic notification dot for badges */}
             <Box position="relative">
-              <IconButton
+              {/* <IconButton
                 aria-label="Profile dashboard"
                 variant="outline"
                 size="sm"
@@ -276,8 +276,8 @@ export default function Home() {
                 onClick={() => setIsProfileOpen(true)}
               >
                 <FiUser />
-              </IconButton>
-              {badges.some((b) => b.earnedAt && !INITIAL_POSTS[0].likedByUser) && (
+              </IconButton> */}
+              {/* {badges.some((b) => b.earnedAt && !INITIAL_POSTS[0].likedByUser) && (
                 <Box
                   position="absolute"
                   top="0"
@@ -289,7 +289,7 @@ export default function Home() {
                   border="2px solid"
                   borderColor="bg.canvas"
                 />
-              )}
+              )} */}
             </Box>
 
             <ClientOnly fallback={<Skeleton boxSize="8" />}>
