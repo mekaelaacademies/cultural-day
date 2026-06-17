@@ -249,7 +249,7 @@ export const INITIAL_COMMENTS: Comment[] = [
 export const STORIES: Story[] = [
   {
     id: "story_japan",
-    title: "Kyoto Zen",
+    title: "Staff Tournament",
     coverImage: "/images/japanese_tea_ceremony.png",
     avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&h=150&q=80",
     slides: [
@@ -269,7 +269,7 @@ export const STORIES: Story[] = [
   },
   {
     id: "story_india",
-    title: "Diwali Lights",
+    title: "Students Tournament",
     coverImage: "/images/indian_diwali_lamps.png",
     avatarUrl: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&h=150&q=80",
     slides: [
@@ -289,7 +289,7 @@ export const STORIES: Story[] = [
   },
   {
     id: "story_kenya",
-    title: "Maasai Life",
+    title: "Cultural",
     coverImage: "/images/maasai_tribal_art.png",
     avatarUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80",
     slides: [
@@ -301,9 +301,49 @@ export const STORIES: Story[] = [
       }
     ]
   },
+    {
+    id: "story_mexico",
+    title: "Talent Explosion",
+    coverImage: "/images/mexican_day_of_dead.png",
+    avatarUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80",
+    slides: [
+      {
+        id: "sm_1",
+        imageUrl: "/images/mexican_day_of_dead.png",
+        caption: "Making sugar skulls (calaveras de azúcar) to place on the altar.",
+        description: "The names of deceased loved ones are written on the skulls' foreheads using colorful icing."
+      },
+      {
+        id: "sm_2",
+        imageUrl: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&h=800&q=80",
+        caption: "Bright orange cempasúchil paths leading spirits to the home altars.",
+        description: "The petalled pathway ensures that spirits do not get lost in the transition between worlds."
+      }
+    ]
+  },
   {
     id: "story_mexico",
-    title: "Dia de Muertos",
+    title: "Roadshow",
+    coverImage: "/images/mexican_day_of_dead.png",
+    avatarUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80",
+    slides: [
+      {
+        id: "sm_1",
+        imageUrl: "/images/mexican_day_of_dead.png",
+        caption: "Making sugar skulls (calaveras de azúcar) to place on the altar.",
+        description: "The names of deceased loved ones are written on the skulls' foreheads using colorful icing."
+      },
+      {
+        id: "sm_2",
+        imageUrl: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&h=800&q=80",
+        caption: "Bright orange cempasúchil paths leading spirits to the home altars.",
+        description: "The petalled pathway ensures that spirits do not get lost in the transition between worlds."
+      }
+    ]
+  },
+    {
+    id: "story_mexico",
+    title: "Bonefire",
     coverImage: "/images/mexican_day_of_dead.png",
     avatarUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80",
     slides: [

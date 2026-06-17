@@ -36,7 +36,7 @@ import GalleryGrid from "@/components/GalleryGrid";
 import { ColorModeButton } from "@/components/ui/color-mode";
 import { Toaster } from "@/components/ui/toaster";
 
-const CATEGORIES = ["All", "Culinary", "Art & Craft", "Costumes", "Performance", "Architecture"];
+const CATEGORIES = ["All", "Staff Tournament", "Student Tournament", "Cultural Day", "Talent Explosion", "Road Show", "Bonefire"];
 
 export default function Home() {
   // Core Database States
@@ -235,7 +235,7 @@ export default function Home() {
           {/* Search Input Bar */}
           <HStack w={{ base: "100%", md: "340px" }} gap="2">
             <Box position="relative" w="100%">
-              <Input
+              {/* <Input
                 placeholder="Search cultures, locations, crafts..."
                 size="sm"
                 borderRadius="full"
@@ -249,7 +249,8 @@ export default function Home() {
               />
               <Box position="absolute" left="3.5" top="2" color="fg.subtle">
                 <FiSearch size="14" />
-              </Box>
+              </Box> */}
+            
             </Box>
           </HStack>
 
