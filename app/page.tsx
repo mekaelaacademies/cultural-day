@@ -40,7 +40,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { motion } from "motion/react"
 
 const CATEGORIES = ["All", "Staff Tournament", "Student Tournament", "Cultural Day", "Talent Explosion", "Road Show", "Bonefire"];
-const WORDS = ["MEKAELA AT 30", "CENTER OF EXCELLENCE", "SOURING NEW HEIGHTS"];
+const WORDS = ["MEKAELA AT 30", "CENTRE OF EXCELLENCE", "SOURING NEW HEIGHTS"];
 const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%";
 export default function Home() {
   // Core Database States
